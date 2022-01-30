@@ -10,8 +10,8 @@ void setup() {
   _strokeCol = randomC.getBaseColor();
   int seedVal = int(random(0,200));
   background(randomC.getComplement());
-  wc1 = new WaveClock(width/2, 40);
-  wc2 = new WaveClock(width/2, height - 40);
+  wc1 = new WaveClock(width/2, 40, _strokeCol);
+  wc2 = new WaveClock(width/2, height - 40, _strokeCol);
    //println(seedVal);
    randomSeed(seedVal);
   size(700, 500);

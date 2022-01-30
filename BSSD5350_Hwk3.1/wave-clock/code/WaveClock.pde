@@ -15,13 +15,14 @@ class WaveClock{
   float lthresh = 7.0;
   int count = 0;
 
-WaveClock(float x, float y) {
+WaveClock(float x, float y, color strokeCol) {
   _x = x;
   _y = y;
   _angnoise = random(10);
   _radiusnoise = random(10);
 	_xnoise = random(10);
-  _ynoise = random(10);	
+  _ynoise = random(10);
+  _strokeCol = strokeCol;	
 }
 
 void show() {
